@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta name="title" content="SSL/TLS TesteterTool">
+  
+<meta name="descrizione" content="SL/TLS TesterTool è un tool SSL/TLS Checker consente di verificare la corretta configurazione e lo stato dei certificati SSL/TLS su un dominio o server. Questo strumento analizza la validità del certificato, la sua data di scadenza, la catena di fiducia (certificate chain) e la compatibilità con i protocolli e le versioni TLS. È utile per garantire che un sito web sia sicuro e conforme agli standard di crittografia, prevenendo vulnerabilità che possono esporre i dati degli utenti.">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta http-equiv="content-language" content="it-ita">
+  
+<link rel="stylesheet" href="./index_files/UI.css">
+
+
+
+<style>
+ins {color: #1095c1;}
+</style>
+<link rel="icon" type="image/png" href="index_files/icona.png">
+<title>SSL/TLS Tester Tool</title>
+</head>
+<body>
+ 
+
+<main class="container">
+<hgroup>
+      
+<article>
+<div class="grid">
+<div>
+<hgroup>
+<h2>SSL/TLS Tester Tool</h2>
+<p>Inserire URL da verificare</p>
+</hgroup>
+
+<form method="POST">
+<label for="host">
+<input type="text" id="host" name="host" placeholder="www.esempio.com" value="" required="">
+</label>
+<button id="submithost" type="submit" aria-busy="false" role="button">Verifica</button>
+</form>
+</div>
+
+<div>
+<hgroup>
+<h2>Comando da terminale</h2>
+<p>Prova l'API sviluppato per terminale attraverso il comando quì sotto riportato.</p>
+</hgroup>
+
+<blockquote>
+<code id="curlcmd">$ curl https://ssl-checker.io/api/v1/check/<ins>www.esempio.com|jq</ins></code>
+</blockquote>
+</div>
+</div>
+      
+      
+<footer>
+<div id="result" class="grid">
+<div>
+<h3>Risultato  per <ins>www.uniba.it</ins></h3>
+</div>
+
+<div dir="rtl">
+<button onclick="location.href='verifica.csv'">Scarica File</button>
+</div>
+</div>
+<figure>
+          
+<table id="checkresult" role="grid">
+<thead>
+<tr>
+<th scope="col"><b>Descrizione</b></th>
+<td><b>Valore</b></td>
+</thead>
+
+<tbody>
+
+<tr>
+<th scope="row">Host</th>
+<td>www.uniba.it</td>
+</tr>
+<tr>
+
+<th scope="row">Stato</th>
+<td>ok</td>
+</tr>
+
+<tr>
+<th scope="row">Tempo di Risposta</th>
+<td>0.11s</td>
+</tr>
+
+<tr>
+<th scope="row">IP</th>
+<td>94.188.237.75</td>
+</tr>
+
+<tr>
+<th scope="row">Rilasciato a</th>
+<td>www.uniba.it</td>
+</tr>
+
+<tr>
+<th scope="row">Organizzazione</th>
+<td>Universita' degli Studi di Bari Aldo Moro</td>
+</tr>
+
+<tr>
+<th scope="row">Paese di rilascio</th>
+<td>NL (Paesi Bassi)</td>
+</tr>
+
+<tr>
+<th scope="row">Rilascio CN</th>
+<td>GEANT OV RSA CA 4</td>
+</tr>
+<tr>
+
+<th scope="row">Organizzazione di rilascio</th>
+<td>GEANT Vereniging</td>
+</tr>
+
+<tr>
+<th scope="row">Cert S/N</th>
+<td>265270316640011592922891888464496598202</td>
+</tr>
+<tr>
+<th scope="row">Cert SHA1</th>
+<td>E6:1E:74:60:FA:6E:93:D6:1C:4D:DB:8E:7E:67:2B:02:B2:0D:57:A2</td>
+</tr>
+<tr>
+<th scope="row">Cert Algorithm</th>
+<td>sha384WithRSAEncryption</td>
+</tr>
+<tr>
+<th scope="row">Cert Version</th>
+<td>2</td>
+</tr>
+<tr>
+<th scope="row">Cert SANs</th>
+<td>DNS:www.uniba.it; DNS:adularia.ict.uniba.it; DNS:manageweb.ict.uniba.it; DNS:uniba.it</td>
+</tr>
+<tr>
+<th scope="row">Certificato scaduto</th>
+<td>falso</td>
+</tr>
+<tr>
+<th scope="row">Certificato valido</th>
+<td>vero</td>
+</tr>
+<tr>
+<th scope="row">Valido dal</th>
+<td>2024-10-29</td>
+</tr>
+<tr>
+<th scope="row">Valido fino al</th>
+<td>2025-10-29</td>
+</tr>
+<tr>
+<th scope="row">Tempo di validità</th>
+<td>365 giorni</td>
+</tr>
+<tr>
+<th scope="row">Tempo rimasto</th>
+<td>321 giorni</td>
+</tr>
+<tr>
+<th scope="row">HSTS Header attivo</th>
+<td>falso</td>
+</tr>
+</tbody>
+</table>
+        
+
+<p>Progetto sviluppato per il caso di studio ... Directory del progetto presente su <a href="https://github.com/narbehaj/ssl-checker">GitHub.</a> SSL Tester Tool è uno strumento che analizza i certificati SSL/TLS di un sito web per verificarne la sicurezza, la validità, e la corretta configurazione. Il certificato SSL (Secure Sockets Layer) garantisce che la connessione tra il browser e il sito web sia crittografata e sicura. L'analisi effettuata da un SSL Tester è utile per identificare problemi che potrebbero compromettere la sicurezza delle comunicazioni o la fiducia degli utenti.</p></p>
+        
+
+
+</div>
+</hgroup>
+</article>
+
+<footer class="container">
+<div style="text-align: center;">
+<small>"SSL/TLS Tester Tool" sviluppato dagli studenti: <br>
+<a href="m.greco131@studenti.uniba.it"> Greco Michele </a> 
+e
+<a href="m.greco131@studenti.uniba.it"> Stati Emanuele</a> 
+
+</div>
+
+</footer>
+
+</main>
+
+</body></html>

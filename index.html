@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="title" content="SSL/TLS TesteterTool">
+
+<meta name="descrizione" content="SL/TLS TesterTool è un tool SSL/TLS Checker consente di verificare la corretta configurazione e lo stato dei certificati SSL/TLS su un dominio o server. Questo strumento analizza la validità del certificato, la sua data di scadenza, la catena di fiducia (certificate chain) e la compatibilità con i protocolli e le versioni TLS. È utile per garantire che un sito web sia sicuro e conforme agli standard di crittografia, prevenendo vulnerabilità che possono esporre i dati degli utenti.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="content-language" content="it-ita">
+
+<link rel="stylesheet" href="./index_files/UI.css">
+
+
+
+<style>
+ins {color: #1095c1;}
+</style>
+<link rel="icon" type="image/png" href="index_files/icona.png">
+<title>SSL/TLS Tester Tool</title>
+</head>
+</head>
+<body>
+
+
+<main class="container">
+<hgroup>
+<article>
+<div class="grid">
+<div>
+<hgroup>
+<h2>SSL/TLS TesterTool</h2>
+<p>Inserire URL da verificare.</p>
+</hgroup>
+<form method="POST">
+<label for="host">
+<input type="text" id="host" name="host" placeholder="www.esempio.com" value="" required="">
+</label>
+
+
+<button onclick="location.href='index2.html'">Verifica</button>
+
+</form>
+</div>
+
+<div>
+<hgroup>
+<h2>Comando da terminale</h2>
+<p>SSL/TLS Tester Tool può essere utilizzato anche in locale dal proprio terminale attraverso la seguente istruzione.</p>
+</hgroup>
+<blockquote>
+<code id="curlcmd">$ curl https://ssl-checker.io/api/v1/check/<ins>www.esempio.com|jq</ins></code>
+</blockquote>
+</div>
+</div>
+
+
+<div>
+<p> Progetto sviluppato per il caso di studio ... Directory del progetto presente su <a href="https://github.com/narbehaj/ssl-checker">GitHub.</a> SSL Tester Tool è uno strumento che analizza i certificati SSL/TLS di un sito web per verificarne la sicurezza, la validità, e la corretta configurazione. Il certificato SSL (Secure Sockets Layer) garantisce che la connessione tra il browser e il sito web sia crittografata e sicura. L'analisi effettuata da un SSL Tester è utile per identificare problemi che potrebbero compromettere la sicurezza delle comunicazioni o la fiducia degli utenti.</p>
+</div>
+</hgroup>
+</article>
+
+<footer class="container">
+<div style="text-align: center;">
+<small>"SSL/TLS Tester Tool" sviluppato dagli studenti: 
+<a href="m.greco131@studenti.uniba.it"> Greco Michele </a> 
+e
+<a href="m.greco131@studenti.uniba.it"> Stati Emanuele</a> 
+
+</div>
+</footer>
+</main>
+
+</body></html>

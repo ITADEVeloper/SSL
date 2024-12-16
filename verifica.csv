@@ -1,0 +1,23 @@
+"Attribute,""Value""";;;
+"Host,""www.uniba.it""";;;
+"Stato,""ok""";;;
+"Tempo di risposta,""0.11 secondi""";;;
+"IP,""94.188.237.75""";;;
+"Rilasciato a,""www.uniba.it""";;;
+"Organizzazione,""Universita' degli Studi di Bari Aldo Moro""";;;
+"Pese di rilascio,""NL""";;;
+"Rilascio CN,""GEANT OV RSA CA 4""";;;
+"Organizzazione di rilascio,""GEANT Vereniging""";;;
+"Cert S/N,""265270316640011592922891888464496598202""";;;
+"Cert SHA1,""E6:1E:74:60:FA:6E:93:D6:1C:4D:DB:8E:7E:67:2B:02:B2:0D:57:A2""";;;
+"Cert Algorithm,""sha384WithRSAEncryption""";;;
+"Cert Versione,""2""";;;
+"Cert SANs,""DNS:www.uniba.it"; DNS:adularia.ict.uniba.it; DNS:manageweb.ict.uniba.it;" DNS:uniba.it"""
+"Cert Scaduto,""False""";;;
+"Cert Valido,""True""";;;
+"Valido dal,""2024-10-29""";;;
+"Valido fino al,""2025-10-29""";;;
+"Tempo di validitˆ,""365""";;;
+"Tempo rimasto,""321""";;;
+"Tempo sino alla scadenza,""320""";;;
+"HSTS Header Abilitato,""False""";;;
